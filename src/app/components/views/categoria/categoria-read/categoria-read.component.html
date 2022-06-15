@@ -1,6 +1,7 @@
 <div class="content">
-    <div class="title">
-        <h1>Categoria</h1>
+  <div class="title">
+    <h1>Categoria</h1>
+    <mat-spinner *ngIf="showProgres" class="progresbar"></mat-spinner>
     </div>
 
     <button (click)="navegarParaCategoriaCreate()" mat-stroked-button color="accent" class="mat-elevation-z8">
@@ -8,7 +9,7 @@
     </button>
 
     <div class="mat-elevation-z8 content-table">
-        <table class="table" mat-table [dataSource]="categorias">
+      <table class="table" mat-table [dataSource]="categorias">
 
             <ng-container matColumnDef="id">
               <th mat-header-cell *matHeaderCellDef> ID </th>

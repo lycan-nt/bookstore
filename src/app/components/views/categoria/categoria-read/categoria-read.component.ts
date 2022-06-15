@@ -13,19 +13,22 @@ export class CategoriaReadComponent implements OnInit {
 
   categorias: Categoria[] = [];
 
+  showProgres = false;
   constructor(
     private service: CategoriaService,
     private router: Router
   ) { }
 
   ngOnInit(): void {
+    this.showProgres = true;
     this.findAll();
   }
 
   findAll() {
-    this.service.findAll().subscribe(res => {
-      console.table(res);
+      this.service.findAll().subscribe(res => {
       this.categorias = res;
+      if (res.length > 0) 
+        this.showProgres = false;   
     })
   }
 

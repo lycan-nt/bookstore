@@ -1,6 +1,16 @@
 .content {
+    /* display: flex; */
     width: 90%;
     margin: 1.4rem auto auto auto;
+
+
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.progresbar {
+    margin: auto;
 }
 
 .title {

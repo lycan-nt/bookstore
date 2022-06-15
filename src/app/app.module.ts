@@ -28,6 +28,7 @@ import { LivroCreateComponent } from './components/views/livro/livro-create/livr
 import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
 import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { LivroReadComponent } from './components/views/livro/livro-read/livro-re
     MatInputModule,
     MatFormFieldModule,
     MatSnackBarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
